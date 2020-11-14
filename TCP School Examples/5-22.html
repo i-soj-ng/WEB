@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+
+    <h1>텍스트 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        검색할 내용을 입력하세요:
+        <input type="text" name="search">
+    </form>
+
+    <h1>비밀번호 입력</h1>
+    <form>
+        사용자: <br>
+        <input type="text" name="username"><br>
+        비밀번호: <br>
+        <input type="password" name="password">
+    </form>
+
+    <h1>라디오 버튼</h1>
+    <p>다음 중 가장 재밌고 내용이 알찬 강좌를 하나만 골라주세요.</p>
+    <form>
+        <input type="radio" name="lecture" value="html" checked>HTML<br>
+        <input type="radio" name="lecture" value="css">CSS<br>
+        <input type="radio" name="lecture" value="java">JAVA<br>
+        <input type="radio" name="lecture" value="cpp">C++<br>
+    </form>
+
+    <h1>파일 선택 박스</h1>
+    <p>여러분이 가장 행복했던 날의 사진을 선택해 주세요.</p>
+    <form>
+        <input type="file" name="upload_file" accept="image/*">
+    </form>
+
+    <h1>선택 입력</h1>
+    <p>다음 중 여러분이 가장 좋아하는 과일을 골라주세요.</p>
+    <form>
+        <select name="fruit">
+            <option value="apple">사과</option>
+            <option value="orange" selected>오렌지</option>
+            <option value="strawberry">딸기</option>
+            <option value="peach">복숭아</option>
+        </select>
+    </form>
+
+    <h1>문장 입력</h1>
+    <p>여러분의 부모님께 하고 싶은 말을 적어보세요.</p>
+    <form>
+        <textarea name="message" cols="30" rows="5">여기에 적으세요.</textarea>
+    </form>
+
+    <h1>버튼 입력</h1>
+    <button type="button" onclick="alert('버튼을 클릭하셨군요!')">버튼을 눌러주세요.</button>
+
+    <h1>전송 버튼</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        어릴 때 자신의 별명을 적어주세요 : <br>
+        <input type="text" name="nickname" value="별명"><br><br>
+        <input type="submit" value="전송">
+    </form>
+    <p>별명을 적으신 후에 전송 버튼을 눌러보세요!</p>
+
+    <h1>필드셋</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        <fieldset>
+            <legend>입력 양식</legend>
+            이름 : <br>
+            <input type="text" name="username"><br>
+            이메일 : <br>
+            <input type="text" name="email"><br>
+            <input type="submit" value="전송">
+        </fieldset>
+    </form>
+</body>
+</html>

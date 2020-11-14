@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Input Attributes</title>
+</head>
+<body>
+    <h1>height와 width 속성을 이용한 이미지의 크기 설정</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        사용자 : <input type="text" name="username"><br>
+        비밀번호 : <input type="password" name="password" autofocus><br><br>
+        <input type="image" src="http://www.tcpschool.com/examples/images/img_penguin.png" alt="전송" height="26" width="26">
+        그림을 클릭하시면 전송됩니다!
+    </form>
+
+    <h1>list 속성을 이용한 datalist 요소</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        <input list="lectures" name="lecture">
+            <datalist id="lectures">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JAVA"></option>
+                <option value="C++"></option>
+            </datalist>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>min과 max 속성을 이용한 입력값 제한</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 가장 좋아하는 숫자는 몇인가요?<br>
+        (단, 1부터 9까지에서 골라주세요!)<br><br>
+        <input type="number" name="favnum" min="1" max="9"><br><br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>multiple 속성을 이용한 다중 파일 전송</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        서버로 전송할 파일을 선택해주세요 : <br>
+        (여러 개의 파일 선택도 가능해요!)<br><br>
+        <input type="file" name="uploadfile" multiple><br><br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>patter 속성을 이용한 입력 형식 제한</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분의 이메일 주소를 입력해 주세요 :<br><br>
+        <input type="email" name="email"
+            pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*" title="이메일 양식">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>placeholder 속성을 이용한 힌트 제공</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        사용자 : <input type="text" name="username" placeholder="홍길동"><br>
+        비밀번호 : <input type="password" name="password" placeholder="1234"><br><br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>required 속성을 이용한 필수 입력 설정</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        이름 : <input type="text" name="name" required> (이름은 반드시 입력해야 해요!)<br>
+        나이 : <input type="number" name="age" min="1" max="99"><br><br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>step 속성을 이용한 입력 간격 설정</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 가장 좋아하는 숫자는 몇인가요?<br>
+        (단, -30부터 30사이에서 5단위로 골라주세요!)<br><br>
+        <input type="number" name="favnum" min="-30" max="30" step="5"><br><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

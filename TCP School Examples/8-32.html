@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Input Types</title>
+</head>
+<body>
+
+    <h1>number 타입을 이용한 숫자 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 가장 좋아하는 숫자는 몇인가요?<br>
+        (단, 1부터 9까지에서 골라주세요!)<br><br>
+        <input type="number" name="favnum" min="1" max="9">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>range 타입을 이용한 값의 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 가장 좋아하는 숫자는 몇인가요?<br>
+        이번에는 수평바를 조절해서 골라주세요!<br><br>
+        0 <input type="range" name="favnum" min="1" max="9"> 9
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>color 타입을 이용한 색상 선택</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        가장 좋아하는 색을 골라주세요 :<br><br>
+        <input type="color" name="favcolor" value="#CC6600">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>date 타입을 이용한 날짜 선택</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        맘에 드는 날짜를 하나 골라주세요 :<br><br>
+        <input type="date" name="theday" min="1977-01-01" max="2020-12-31">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>time 타입을 이용한 시간 선택</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 태어난 시간은 몇 시인가요?<br><br>
+        <input type="time" name="birthtime">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>datetime-local 타입을 이용한 날짜와 시간 선택</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        오늘의 날짜와 지금 시각은?<br><br>
+        <input type="datetime-local" name="starttime">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>month 타입을 이용한 연도와 월 선택</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 태어난 연월을 선택해 보세요!<br><br>
+        <input type="month" name="birthmonth">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>week 타입을 이용한 연도와 주 선택</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        오늘이 이번 달의 몇 번째 주인지 선택해주세요! <br>
+        <input type="week" name="nthweek">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>email 타입을 이용한 email 주소 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분의 이메일 주소를 입력해 주세요 :<br><br>
+        <input type="=email" name="email">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>url 타입을 이용한 URL 주소 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        TCPSchool의 URL 주소를 입력해 주세요 :<br><br>
+        <input type="url" name="url">
+        <input type="submit" value="전송"><br><br>
+    </form>
+
+    <h1>tel 타입을 이용한 전화번호 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분의 전화번호를 입력해 주세요 :<br><br>
+        <input type="tel" name="tel">
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>search 타입을 이용한 검색어 입력</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 평소에 가장 많이 찾아본 검색어를 입력해 주세요 :<br><br>
+        <input type="search" name="keyword">
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

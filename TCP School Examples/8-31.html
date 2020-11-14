@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Form Elements</title>
+</head>
+<body>
+
+    <h1>datalist 요소를 이용한 선택</h1>
+
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        <input list="lectures" name="lecture">
+            <datalist id="lectures">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JAVA"></option>
+                <option value="C++"></option>
+            </datalist>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>keygen 요소를 이용한 key 생성</h1>
+
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        사용자 : <br>
+        <input type="text" name="username"><br>
+        암호화방법 : <br>
+        <keygen name="security"><br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>output 요소를 이용한 계산 결과 표현</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php"
+    oninput="total.value=parseInt(value01.value)/parseInt(value02.value)">
+        <input type="number" id="value01" value="20">
+        /
+        ( 0
+        <input type="range" id="value02" name="input02" value="50" min="0" max="100">
+        100 )
+        =
+        <output name="total" for="value01 value02"></output><br><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

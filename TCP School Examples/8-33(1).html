@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Input Attributes</title>
+</head>
+<body>
+    <h1>autocomplete 속성을 이용한 자동 완성</h1>
+    <form action="http://www.tcpschool.com/examples/media/request.php" autocomplete="on">
+        이름 : <input type="text" name="name"><br>
+        나이 : <input type="number" name="age" min="1" max="99" autocomplete="off"><br>
+        <a href="http://www.tcpschool.com/html/intro">HTML 수업</a>
+        <p>input 요소에 데이터를 입력하고 전송 버튼을 누른 후에 F5키를 눌러 보세요!<br>
+        그리고 나서 같은 정보를 입력하려고 하면 이전 데이터가 아래에 팝업될 거에요!</p>
+        <input type="submit" value="전송">
+    </form>
+
+    <h1>novalidate 속성을 이용한 유효성 검사 여부 명시</h1>
+
+    <form action="http://www.tcpschool.com/examples/media/request.php">
+        여러분이 자주 들리는 사이트의 URL 주소를 입력해 주세요 :<br><br>
+        <input type="url" name="url">
+        <input type="submit" value="전송"><br>
+    </form>
+
+    <p><br>novalidate 속성을 적용하면 클라이언트 측의 유효성 검사를 건너뛸 수 있습니다.</p>
+    <form action="http://www.tcpschool.com/examples/media/request.php" novalidate>
+        여러분이 자주 들리는 사이트의 URL 주소를 입력해 주세요 :<br><br>
+        <input type="url" name="url">
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>
