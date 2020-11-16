@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SNS Timeline</title>
+    <style>
+        .container {
+            background-color:#E9E9E9;
+            border-style:double;
+            border-color:#B4B4B4;
+            border-width:2px;
+            padding:15px;
+            margin-top:10px;
+        }
+        textarea {
+            width:100%;
+            border-style:solid;
+            border-color:#C8C8C8;
+            border-width:2px;
+        }
+        #timeline {
+            color:#4B4B4B;
+        }
+        p {
+            width:100%;
+            background-color:white;
+            border-style:solid;
+            border-color:#C8C8C8;
+            border-width:2px;
+        }
+        button {
+            width:100%;
+            color:#4B4B4B;
+            background:linear-gradient(to right, #BFBFFF, #FFBFFF);
+            border-style:solid;
+            border-width:1px;
+            border-color:#F5F5F5;
+        }
+        h1 {
+            margin:0 auto;
+            background: linear-gradient(to right, #8080E1, #FF80FF);
+            padding:15px;
+            text-align: center;
+            color:#3C3C3C;
+        }
+    </style>
+</head>
+<body>
+    <h1>WINK TIMELINE</h1>
+
+    <div class="container">
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+        <button onclick="postClick()"><b>POST</b></button>
+    </div>
+    <div id="timeline">
+    </div>
+
+    <script>
+        let postInput = document.querySelector("textarea");
+        let timeLine = document.querySelector("#timeline");
+
+        window.onload = async () => {
+            const postResponse = await fetch('http://ec2-52-78-131-251.ap-northeast-2.compute.amazonaws.com/feed/', {
+                method: 'get',
+            });
+            const posts = await postResponse.json();
+
+            for (let i = 0 ; i < posts.length; i++)
+            {
+                console.log(posts[i]);
+                post(posts[i].owner, posts[i].content);
+            }
+        };
+
+        const postClick = async () => {
+            post('이소정', postInput.value);
+        };
+
+        const post = (name, description) => {
+            if(postInput.value == "") alert('내용을 작성해주세요.');
+            else{
+                let container = document.createElement('div');
+                let owner = document.createElement('h2');
+                let content = document.createElement('p');
+                owner.appendChild(document.createTextNode(name));
+                content.appendChild(document.createTextNode(description));
+                container.setAttribute('class', 'container');
+                container.appendChild(owner);
+                container.appendChild(content);
+
+                timeLine.appendChild(container);
+            };
+        };
+    </script>
+</body>
+</html>
