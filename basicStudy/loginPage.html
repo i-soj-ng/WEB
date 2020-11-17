@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        .box {
+            background-color: floralwhite;
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 250px;
+            border: 3px solid #FFD9B7;
+            border-radius: 5px;
+            text-align: center;
+            padding: 15px;
+        }
+        h1 {
+            color: #FF8080;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        #ID {
+            margin: 0 auto;
+            margin-top: 20px;
+            border: none;
+            border-bottom: 3px solid #FFAFAF;
+        }
+        #password {
+            margin: 0 auto;
+            margin-top: 20px;
+            border: none;
+            border-bottom: 3px solid #FFAFAF;
+        }
+        #submit {
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 70%;
+            height: 40px;
+            border: none;
+        }
+        #signup {
+            color: #FF8080;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        #forget {
+            color: #FF8080;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+        abbr {
+            text-decoration: none;
+            font-size: 14px;
+        }
+        body {
+            background: radial-gradient(#FFFF80, #FF8080);
+        }
+        input::placeholder {
+            color: #FFAFAF;
+            font-weight: lighter;
+        }
+        #submit {
+            color: #FFAD48;
+            background-color: #FFEBD2;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>LOG IN</h1>
+        <input id="ID" type="text" placeholder="ID"><br>
+        <input id="password" type="password" placeholder="PW"><br>
+        <input id="submit" type="submit" value="LOG IN"><br>
+        <p><a id="signup" href="" target="_blank">아이디가 없으신가요?</a></p>
+        <p><a id="forget" href="" target="_blank"><abbr title="맨날 까먹어서 맨날 다시 만드는 비밀번호">아이디/비밀번호를 잊어버리셨나요?</abbr></a></p>
+    </div>
+</body>
+</html>
