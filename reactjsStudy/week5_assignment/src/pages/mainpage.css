@@ -1,0 +1,29 @@
+header {
+    border: 2px solid black;
+}
+#title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    margin-right: 850px;
+}
+#main {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+}
+#timeline {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+}
+#mypage {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+}

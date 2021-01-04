@@ -1,0 +1,17 @@
+.entire {
+    border: 2px solid black;
+    margin-top: 12px;
+}
+#myinfo {
+    margin-top: 50px;
+    margin-left: 760px;
+}
+.info {
+    margin-top: 40px;
+    margin-left: 740px;
+    margin-bottom: 15px;
+    margin-bottom: 65px;
+}
+#name, #birth, #school, #insta, #etc {
+    font-size: 20px;
+}
