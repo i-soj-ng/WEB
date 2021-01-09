@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Type Conversion</title>
+</head>
+<body>
+    <h1>같은 변수에 다른 타입의 값 대입</h1>
+    <p id="result"></p>
+
+    <script>
+        var num = 20;
+        document.getElementById("result").innerHTML = num + "<br>";
+        num = "이십";
+        document.getElementById("result").innerHTML += num + "<br>";
+        var num;
+        document.getElementById("result").innerHTML += num;
+    </script>
+</body>
+</html>
