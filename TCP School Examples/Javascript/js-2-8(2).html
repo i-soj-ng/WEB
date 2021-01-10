@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Type Conversion</title>
+</head>
+<body>
+    <h1>묵시적 타입 변환</h1>
+    <p id="result"></p>
+
+    <script>
+        var result = 10 + "문자열";
+        document.getElementById("result").innerHTML = result + "<br>";
+        result = "3" * "5";
+        document.getElementById("result").innerHTML += result + "<br>";
+        result = 1 - "문자열";
+        document.getElementById("result").innerHTML += result;
+    </script>
+</body>
+</html>
