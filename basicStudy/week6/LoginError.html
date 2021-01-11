@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        div {
+            margin: 40px;
+            width: 220px;
+            height: 300px;
+            border: 2px solid darkgray;
+        }
+        h1 {margin-left: 56px; margin-top: 42px; margin-bottom: 36px;}
+        #id {margin-bottom: 6px; margin-left: 20px;}
+        #pw {margin-bottom: 30px; margin-left: 20px;}
+        button {width: 179px; margin-left: 20px;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>LOGIN</h1>
+        <input type="text" placeholder="ID" id="id"><br>
+        <input type="password" placeholder="PW" id="pw"><br>
+        <button onclick="buttonClick();">LOGIN</button>
+    </div>
+
+    <script>
+        function buttonClick() {
+            var userID = 'abc';
+            var userPW = '123';
+            var inputID = document.getElementById("id").value;
+            var inputPW = document.getElementById("pw").value;
+
+            if (userID == inputID && userPW == inputPW) {
+                alert('로그인 되었습니다.');
+            } else if (userID == inputID && userPW != inputPW) {
+                alert('비밀번호가 잘못되었습니다.');
+            } else if (userID != inputID && userPW == inputPW) {
+                alert('아이디가 잘못되었습니다.');
+            } else {
+                alert('아이디와 비밀번호가 잘못되었습니다.');
+            }
+        }
+    </script>
+</body>
+</html>
