@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Type Conversion</title>
+</head>
+<body>
+    <h1>날짜를 문자열이나 숫자로 변환</h1>
+    <p id="result"></p>
+
+    <script>
+        var result = String(Date());
+        document.getElementById("result").innerHTML = result + "<br>";
+        result = Date().toString();
+        document.getElementById("result").innerHTML += result + "<br>";
+        var date = new Date();
+        result =  date.getFullYear()
+        document.getElementById("result").innerHTML += result + "<br>";
+        result = date.getTime();
+        document.getElementById("result").innerHTML += result;
+    </script>
+</body>
+</html>
