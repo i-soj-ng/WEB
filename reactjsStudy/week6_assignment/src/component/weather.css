@@ -1,0 +1,38 @@
+.container2 {
+    position: relative;
+    margin: 10px;
+}
+img { z-index: 1; }
+.cards {
+    color: white;
+    text-shadow: 1px 2px 5px dimgray;
+    position: absolute;
+    bottom: 200px;
+    left: 750px;
+    opacity: 0.9;
+    z-index: 2;
+}
+#cityName {
+    font-size: 40px;
+}
+#currTemp {
+    font-size: 40px;
+}
+#minmaxTemp {
+    font-size: 27px;
+}
+#descrip {
+    font-size: 25px;
+}
+
+.row {
+    position: absolute;
+    bottom: 300px;
+    left: 620px;
+    z-index: 3;
+}
+
+#cityBlank, #countryBlank, #button {
+    margin-left: 8px;
+    height: 25px;
+}
