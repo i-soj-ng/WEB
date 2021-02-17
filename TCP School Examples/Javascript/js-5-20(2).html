@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Array</title>
+</head>
+<body>
+    <h1>배열의 참조</h1>
+    <script>
+        var arr = ["JavaScript"];
+        var element = arr[0];
+        arr[1] = 10;
+        arr[2] = element;
+        document.write("배열 arr의 요소에는 [" + arr + "]가 있습니다.<br>");
+        document.write("배열 arr의 길이는 " + arr.length + "입니다.<br>");
+        delete arr[2];
+        document.write("배열 arr의 요소에는 [" + arr + "]가 있습니다.<br>");
+        document.write("배열 arr의 길이는 " + arr.length + "입니다.<br>");
+    </script>
+</body>
+</html>
